@@ -1,4 +1,4 @@
-import { Controller } from '../../base/index.js';
+import { Controller } from 'pienut';
 
 class TestController extends Controller {
   constructor() {

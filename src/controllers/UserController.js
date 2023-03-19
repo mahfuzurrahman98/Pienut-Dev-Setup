@@ -1,4 +1,4 @@
-import { Controller } from '../../base/index.js';
+import { Controller } from 'pienut';
 import User from '../models/User.js';
 
 class UserController extends Controller {

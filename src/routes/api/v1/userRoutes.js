@@ -1,4 +1,4 @@
-import { Auth, Route } from '../../../../base/index.js';
+import { Auth, Route } from 'pienut';
 import UserController from '../../../controllers/UserController.js';
 
 Route.get('/', UserController, '_index', Auth.isAuthenticated);

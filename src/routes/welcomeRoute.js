@@ -1,4 +1,4 @@
-import { Route } from '../../base/index.js';
+import { Route } from 'pienut';
 import TestController from '../controllers/TestController.js';
 
 Route.get('/', TestController, 'index');

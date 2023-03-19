@@ -1,4 +1,4 @@
-import Pienut from '../base/index.js';
+import Pienut from 'pienut';
 import v1Routes from './routes/api/v1/index.js';
 import welcomeRoute from './routes/welcomeRoute.js';
 

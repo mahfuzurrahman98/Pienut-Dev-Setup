@@ -1,4 +1,4 @@
-import { Model } from '../../base/index.js';
+import { Model } from 'pienut';
 
 class User extends Model {
   collectionName = 'users';

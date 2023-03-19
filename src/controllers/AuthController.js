@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { Auth, Controller, Password, Validator } from '../../base/index.js';
+import { Auth, Controller, Password, Validator } from 'pienut';
 import User from '../models/User.js';
 
 dotenv.config();
@@ -17,11 +17,11 @@ class AuthController extends Controller {
     // validate first
     const rules = {
       name: {
-        string: [true, 'Name must be a string'],
+        type: ['string', 'Name must be a string'],
         required: [true, 'Name is required'],
       },
       username: {
-        string: [true, 'Name must be a string'],
+        type: ['string', 'Name must be a string'],
         required: [true, 'Userame is required'],
         unique: [['users', 'username'], 'Username is already taken'],
       },

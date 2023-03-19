@@ -1,4 +1,4 @@
-import { Auth, Route } from '../../../../base/index.js';
+import { Auth, Route } from 'pienut';
 import AuthController from '../../../controllers/AuthController.js';
 
 Route.post('/register', AuthController, 'register');
