@@ -1,14 +1,6 @@
 ## Pienut setup for development
 
-- Initialize a node js project
-
-```
-npm init
-```
-
-make sure the `package.json` file has `"type": "module"`
-
-- Clone this repository now
+- Clone this repository
 
 ```
 git clone git@github.com:mahfuzurrahman98/Pienut-Dev-Setup.git
