@@ -81,8 +81,6 @@ class AuthController extends Controller {
     // fire the query
     let user = await User.findOne({ email: data.email });
 
-    console.log('logging in user: ', user);
-
     if (!user) {
       return this.sendApiResponse(res, 400, 'Invalid credentials');
     }
@@ -98,8 +96,6 @@ class AuthController extends Controller {
       username: user.username,
       role: user.role,
     };
-
-    console.log('userInfo: ', userInfo);
 
     const _accessToken = await Auth.createAccessToken(userInfo, '15m');
 
@@ -122,7 +118,6 @@ class AuthController extends Controller {
 
   async getRefreshToken(req, res) {
     const cookieToken = req.cookies.refreshtoken;
-    console.log('cookies:', req.cookies);
 
     // No token,
     if (!cookieToken) {
@@ -142,7 +137,6 @@ class AuthController extends Controller {
     }
 
     // token is valid, check if user exist
-    console.log('payload:', payload);
     const user = await User.findById(payload.user._id);
     if (!user) {
       return this.sendApiResponse(res, 401, 'User not found');
