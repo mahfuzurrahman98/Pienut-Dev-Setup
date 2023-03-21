@@ -1,5 +1,5 @@
 {
-  "name": "Pienut-Test-API",
+  "name": "pienut-test-api",
   "version": "1.0.0",
   "description": "A boilerplate setup for Pienut development",
   "main": "server.js",
