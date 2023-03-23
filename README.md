@@ -6,7 +6,7 @@
 git clone git@github.com:mahfuzurrahman98/Pienut-Dev-Setup.git
 ```
 
-- Install `pienut` using the follwing command
+- cd into the project folder and install `pienut` using the follwing command
 
 ```
 npm install pienut
